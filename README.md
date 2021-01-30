@@ -10,11 +10,9 @@ You can download compiled code/binaries from  https://kalyanvsc.blogspot.com/202
 
 ## Getting Started
 
-Make sure that you have installed Python on the server where you want to deploy this code
-
 ### Prerequisites
 
-The code requires a Linux machine with Python3.7 along with following modules 
+Linux machine with Python3.7 or above installed with following modules 
 
 - [ ] cryptography
 
