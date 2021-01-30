@@ -6,7 +6,7 @@ In any enterprise environment customers do implement monitoring tools, which req
 
 The project is developed in Python 3.7.
 
-If you need binaries please check https://kalyanvsc.blogspot.com/2020/11/run-remote-checks_7.html
+You can download compiled code/binaries from  https://kalyanvsc.blogspot.com/2020/11/run-remote-checks_7.html
 
 ## Getting Started
 
@@ -14,7 +14,7 @@ Make sure that you have installed Python on the server where you want to deploy 
 
 ### Prerequisites
 
-Install following modules 
+The code requires a Linux machine with Python3.7 along with following modules 
 
 - [ ] cryptography
 
@@ -22,7 +22,7 @@ Install following modules
 
 - [ ] pexpect
 
-  ​	pip install pexpect
+  pip install pexpect
 
 ### Installation
 
