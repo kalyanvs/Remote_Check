@@ -1,10 +1,10 @@
 # +========================================================================+
-# |                   		Kalyan VS                    	 	   |
-# |                           kalyanvsc@mdcbms.ae                          |
+# |                   		Kalyan VS                    	 	   		   |
+# |                       kalyanvsc@gmail.com                              |
 # +========================================================================+
 # |                                                                        |
 # |                                                                        |
-# |Description      : Generate Encrypyed Password for the value 	   |
+# |Description      : Generate Encrypyed Password for the value 	       |
 # |                                                                        |
 # |                                                                        |
 # |Change History:                                                         |
