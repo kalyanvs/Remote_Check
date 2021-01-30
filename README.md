@@ -24,13 +24,11 @@ The code requires a Linux machine with Python3.7 along with following modules
 
   pip install pexpect
 
-### Installation
+### Installation & Configuration
 
 Clone the repo from
 
 ​	https://github.com/kalyanvs/Remote_Check.git
-
-## Usage
 
 The project contains the following files
 
@@ -41,7 +39,7 @@ The project contains the following files
 3. devices.cfg - The configuration file
 
 
-### Configuring device information
+#### Configuring device information
 
 The configuration file (devices.cfg) contains three different sections i.e. **general, mail** and **device information**. Following is the format that you need to provide device information. Please note for each device you have to create a dedicated block/section. 
 
@@ -65,7 +63,7 @@ ssh_port = 22
 commands = "puredrive list ", "purearray list --controller ", "purearray list --space ", "puremessage list --open"
 ```
 
-### Configuring Email Notification
+#### Configuring Email Notification
 
 In order to receive the report and log outputs (.txt file) through email you need to provide following details. 
 
@@ -80,7 +78,7 @@ sender_email_password = gAAAAABgFAT9Xla7a386Gixgvw0KfDirD3jYLDxSxKowgbxsZsF1zhPH
 receiver_email=test@gmail.com, test@yahoo.com
 ```
 
-### Configuring Log and Reports Retention
+#### Configuring Log and Reports Retention
 
 By default the output and log files will be retained for 7 days on the system where you are running this code. Under general configuration you can adjust this based on your requirement
 
@@ -89,7 +87,7 @@ By default the output and log files will be retained for 7 days on the system wh
 reports_retention=7
 ```
 
-### Generate Encrypted Password Value
+#### Generate Encrypted Password Value
 
 it's always recommended to store the passwords in encrypted mode instead of clear text. For this project you can run below command to generate encrypted value for "userpasswd" and "sender_email_password" fields in devices.cfg file.
 
@@ -106,7 +104,7 @@ gAAAAABgFAT9Xla7a386Gixgvw0KfDirD3jYLDxSxKowgbxsZsF1zhPHQzPJn6b4ivlmRDHK7YlylDV2
 
 Copy and paste the encrypted value in devices.cfg for respective device
 
-### Generate Encrypted Password Value
+### Execution
 
 After creating the configuration information you can run the below command to execute and generate report.
 
