@@ -1,6 +1,6 @@
 ## About The Project
 
-In any enterprise environment customers do implement monitoring tools, which requires additional configuration and plug-ins for some devices in order to get the required information. The target of this project is provide a tool that can fetch required information for daily administration from any SSH enabled devices like Linux/Unix, storage, network devices etc. Though there are monitoring tools, the administrator will have to access the devices on daily basis to check the health of the devices using various commands. This project majorly helps to avoid the manual intervention. 
+This Python script allows you to captures the output of remotely executed commands sends an email. You can pass any command that is supported on the target device/server. The devices not only limited to servers, you can use against storages, switches etc., if SSH connection is supported.  
 
 ### Built With
 
