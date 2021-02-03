@@ -17,13 +17,13 @@ You can download compiled code/binaries from  https://kalyanvsc.blogspot.com/202
 
 ### Prerequisites
 
-Linux machine with Python3.7 or above installed with following modules 
+A Linux machine with Python3.x or above with following modules 
 
-- [ ] cryptography
+- [ ] cryptography : For license and other details check https://pypi.org/project/cryptography/
 
   pip install cryptography
 
-- [ ] pexpect
+- [ ] pexpect : For license and other details check https://pypi.org/project/pexpect/
 
   pip install pexpect
 
@@ -139,9 +139,7 @@ Project Link: https://github.com/kalyanvs/Remote_Check.git
 
 Project Binary Files: https://kalyanvsc.blogspot.com/2020/11/run-remote-checks_7.html 
 
-## Acknowledgements
 
-https://pypi.org/project/cryptography/
 
-https://pypi.org/project/pexpect/
+
 
