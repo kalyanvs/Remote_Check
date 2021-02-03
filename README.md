@@ -1,12 +1,17 @@
 ## About The Project
 
-This Python script allows you to captures the output of remotely executed commands sends an email. You can pass any command that is supported on the target device/server. The devices not only limited to servers, you can use against storages, switches etc., if SSH connection is supported.  
+This Python script allows you to captures the output of remotely executed commands and sends an email. You can pass any command that is supported on the target. The target is not only limited to servers, you can use against storages, switches etc., while SSH connection is supported.  
 
 ### Built With
 
 The project is developed in Python 3.7.
 
 You can download compiled code/binaries from  https://kalyanvsc.blogspot.com/2020/11/run-remote-checks_7.html
+
+## Features
+
+- User/email passwords are encrypted
+- Configurable retention period for reports and log files 
 
 ## Getting Started
 
@@ -39,7 +44,7 @@ The project contains the following files
 
 #### Configuring device information
 
-The configuration file (devices.cfg) contains three different sections i.e. **general, mail** and **device information**. Following is the format that you need to provide device information. Please note for each device you have to create a dedicated block/section. 
+The configuration file (devices.cfg) contains three different sections i.e. **general, mail** and **device information**. Following is the format that you need to provide for devices. Please note for each device you have to create a dedicated block/section. 
 
 ```
 [Name of The Device]
@@ -53,7 +58,7 @@ commands = <command that you would like to execute on this device. The command s
 Below is the example:
 
 ```
-[Primary_PureStorage]
+[Primary_Storage]
 username = kalyan
 userpasswd = gAAAAABgFAT9Xla7a386Gixgvw0KfDirD3jYLDxSxKowgbxsZsF1zhPHQzPJn6b4ivlmRDHK7YlylDV2NN6xgDob8owmv
 device_ip = 12.1.80.1
@@ -78,7 +83,7 @@ receiver_email=test@gmail.com, test@yahoo.com
 
 #### Configuring Log and Reports Retention
 
-By default the output and log files will be retained for 7 days on the system where you are running this code. Under general configuration you can adjust this based on your requirement
+By default the output and log files will be retained for 7 days on the system where the code is running. Under general configuration you can adjust this based on your requirement
 
 ```
 [general]
@@ -87,14 +92,14 @@ reports_retention=7
 
 #### Generate Encrypted Password Value
 
-it's always recommended to store the passwords in encrypted mode instead of clear text. For this project you can run below command to generate encrypted value for "userpasswd" and "sender_email_password" fields in devices.cfg file.
+It's highly recommended to store the passwords in encrypted mode instead of clear text. For this project you can run below command to generate encrypted value for "userpasswd" and "sender_email_password" fields in devices.cfg file.
 
 ```
 python genencryptpasswdvalue.py 
 Enter the value to generate envrypted password : 
 ```
 
-Once you enter the password the encrypted value similar to below will be returned by the program
+Once you enter the password the encrypted value will be returned by the program, similar to below
 
 ```
 gAAAAABgFAT9Xla7a386Gixgvw0KfDirD3jYLDxSxKowgbxsZsF1zhPHQzPJn6b4ivlmRDHK7YlylDV2NN6xgDob8owmv==
@@ -139,3 +144,4 @@ Project Binary Files: https://kalyanvsc.blogspot.com/2020/11/run-remote-checks_7
 https://pypi.org/project/cryptography/
 
 https://pypi.org/project/pexpect/
+
