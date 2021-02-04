@@ -6,8 +6,6 @@ This Python script allows you to captures the output of remotely executed comman
 
 The project is developed in Python 3.7.
 
-You can download compiled code/binaries from  https://kalyanvsc.blogspot.com/2020/11/run-remote-checks_7.html
-
 ## Features
 
 - User/email passwords are encrypted
