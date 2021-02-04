@@ -135,8 +135,6 @@ Kalyan VS - kalyanvsc@gmail.com
 
 Project Link: https://github.com/kalyanvs/Remote_Check.git
 
-Project Binary Files: https://kalyanvsc.blogspot.com/2020/11/run-remote-checks_7.html 
-
 
 
 
